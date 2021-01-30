@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const ProfileLink = props => (
   <div>
-    <Link href={`/p/profile`} as={`/p/${props.profile}`}>
+    <Link href={`/p/[profile]`} as={`/p/${props.profile}`}>
       <a>Go to {props.profile}'s profile</a>
     </Link>
   </div>
