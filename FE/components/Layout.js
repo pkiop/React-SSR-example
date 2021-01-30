@@ -1,9 +1,16 @@
-import Layout from "../components/Layout";
+import Header from "./Header";
 
-export default function Profile() {
-  return (
-    <Layout>
-      <p>Hello, my name is jake seo. I use next.js</p>
-    </Layout>
-  );
-}
+const layoutStyle = {
+  margin: 20,
+  padding: 20,
+  border: "1px solid #DDD"
+};
+
+const Layout = props => (
+  <div style={layoutStyle}>
+    <Header />
+    {props.children}
+  </div>
+);
+
+export default Layout;
